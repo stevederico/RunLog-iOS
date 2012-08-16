@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-
+#import "RunLogIncrementalStore.h"
 #import "MasterViewController.h"
 
 @implementation AppDelegate
@@ -83,7 +83,7 @@
     
     NSPersistentStoreCoordinator *coordinator = [self persistentStoreCoordinator];
     if (coordinator != nil) {
-        _managedObjectContext = [[NSManagedObjectContext alloc] init];
+        _managedObjectContext = [[NSManagedObjectContext alloc] initWithConcurrencyType:NSMainQueueConcurrencyType];
         [_managedObjectContext setPersistentStoreCoordinator:coordinator];
     }
     return _managedObjectContext;
@@ -139,7 +139,9 @@
          */
         NSLog(@"Unresolved error %@, %@", error, [error userInfo]);
         abort();
-    }    
+    }
+    
+     [_persistentStoreCoordinator addPersistentStoreWithType:[RunLogIncrementalStore type] configuration:nil URL:nil options:nil error:nil];
     
     return _persistentStoreCoordinator;
 }

@@ -1,14 +1,14 @@
 //
-//  RunLogInrementalStore.m
+//  RunLogIncrementalStore.m
 //  RunLog-iOS
 //
-//  Created by Steve Derico on 8/14/12.
+//  Created by Steve Derico on 8/15/12.
 //  Copyright (c) 2012 Bixby Apps. All rights reserved.
 //
 #import "RunLogAPIClient.h"
-#import "RunLogInrementalStore.h"
+#import "RunLogIncrementalStore.h"
 
-@implementation RunLogInrementalStore
+@implementation RunLogIncrementalStore
 
 + (void)initialize {
     [NSPersistentStoreCoordinator registerStoreClass:self forStoreType:[self type]];
@@ -19,7 +19,7 @@
 }
 
 + (NSManagedObjectModel *)model {
-    return [[NSManagedObjectModel alloc] initWithContentsOfURL:[[NSBundle mainBundle] URLForResource:@"RunLog-iOS" withExtension:@"xcdatamodeld"]];
+    return [[NSManagedObjectModel alloc] initWithContentsOfURL:[[NSBundle mainBundle] URLForResource:@"RunLog_iOS" withExtension:@"xcdatamodeld"]];
 }
 
 - (id<AFIncrementalStoreHTTPClient>)HTTPClient {

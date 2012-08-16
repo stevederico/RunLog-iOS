@@ -42,7 +42,7 @@
 		7B999DF515DB2024006ECEDD /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 7B999DA915DB2024006ECEDD /* README.md */; };
 		7B999E0415DB20F9006ECEDD /* RunLogAPIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B999E0315DB20F9006ECEDD /* RunLogAPIClient.m */; };
 		7B999E0B15DB3012006ECEDD /* Run.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B999E0A15DB3012006ECEDD /* Run.m */; };
-		7B999E0E15DB303A006ECEDD /* RunLogInrementalStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B999E0D15DB303A006ECEDD /* RunLogInrementalStore.m */; };
+		7B999E1515DCCE6D006ECEDD /* RunLogIncrementalStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B999E1415DCCE6D006ECEDD /* RunLogIncrementalStore.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -102,8 +102,8 @@
 		7B999E0315DB20F9006ECEDD /* RunLogAPIClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RunLogAPIClient.m; sourceTree = "<group>"; };
 		7B999E0915DB3012006ECEDD /* Run.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Run.h; sourceTree = "<group>"; };
 		7B999E0A15DB3012006ECEDD /* Run.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Run.m; sourceTree = "<group>"; };
-		7B999E0C15DB303A006ECEDD /* RunLogInrementalStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RunLogInrementalStore.h; path = ../RunLogInrementalStore.h; sourceTree = "<group>"; };
-		7B999E0D15DB303A006ECEDD /* RunLogInrementalStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RunLogInrementalStore.m; path = ../RunLogInrementalStore.m; sourceTree = "<group>"; };
+		7B999E1315DCCE6D006ECEDD /* RunLogIncrementalStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RunLogIncrementalStore.h; path = ../RunLogIncrementalStore.h; sourceTree = "<group>"; };
+		7B999E1415DCCE6D006ECEDD /* RunLogIncrementalStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RunLogIncrementalStore.m; path = ../RunLogIncrementalStore.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -240,8 +240,8 @@
 		7B999E0F15DB3196006ECEDD /* AFIncrementalStore */ = {
 			isa = PBXGroup;
 			children = (
-				7B999E0C15DB303A006ECEDD /* RunLogInrementalStore.h */,
-				7B999E0D15DB303A006ECEDD /* RunLogInrementalStore.m */,
+				7B999E1315DCCE6D006ECEDD /* RunLogIncrementalStore.h */,
+				7B999E1415DCCE6D006ECEDD /* RunLogIncrementalStore.m */,
 				7B999E0215DB20F9006ECEDD /* RunLogAPIClient.h */,
 				7B999E0315DB20F9006ECEDD /* RunLogAPIClient.m */,
 			);
@@ -373,7 +373,7 @@
 				7B999DC715DB2024006ECEDD /* UIImageView+AFNetworking.m in Sources */,
 				7B999E0415DB20F9006ECEDD /* RunLogAPIClient.m in Sources */,
 				7B999E0B15DB3012006ECEDD /* Run.m in Sources */,
-				7B999E0E15DB303A006ECEDD /* RunLogInrementalStore.m in Sources */,
+				7B999E1515DCCE6D006ECEDD /* RunLogIncrementalStore.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
