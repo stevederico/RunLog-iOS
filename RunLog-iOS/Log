@@ -6,16 +6,19 @@ Add Duration to Rails Model
 Added AFIncrementalStore
 Added Dates to Model
 Sort Newest to Oldest
+Fixed Running Pace Calculator
+Added Distance to MainViewController Cell
 
--Fix Pace caludation
+-Remove Hardcoding for 12.0
 -ADd Modified Date
--Add Distance to MainViewController Cell
 -Add Pull to Refresh
 -Add Pusher
+-Add New Run View
+-Add Edit Run View
+    -Add Delete 
 -Add User Login
 -Add Create Run
--Add Delete from iPhone
--Add Edit Run on iPhone
+
 -Add Calendar View
 
 

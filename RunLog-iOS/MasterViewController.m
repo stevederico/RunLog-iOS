@@ -246,7 +246,7 @@
 {
     NSManagedObject *object = [self.fetchedResultsController objectAtIndexPath:indexPath];
     cell.textLabel.text = [[object valueForKey:@"summary"] description];
-    cell.detailTextLabel.text = [[object valueForKey:@"distance"] description];
+    cell.detailTextLabel.text = [NSString stringWithFormat:@"%@m/%@",[object valueForKey:@"distance"],[object valueForKey:@"duration"] ];
 }
 
 @end

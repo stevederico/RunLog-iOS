@@ -44,7 +44,10 @@
         double duration = [self.durationLabel.text doubleValue];
         double distance = [self.distanceLabel.text doubleValue];
         double pace = duration / distance;
-        self.paceLabel.text = [NSString stringWithFormat:@"%.2f",pace];
+        double i;
+        double r = modf(pace, &i);
+        double secs = r*60;
+        self.paceLabel.text = [NSString stringWithFormat:@"%.0f:%02.0f",i,secs];
         
         self.dateLabel.text = [[self.detailItem valueForKey:@"created_at"] description];
     }
