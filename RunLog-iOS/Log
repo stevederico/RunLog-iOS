@@ -1,11 +1,25 @@
+
+
+
+8/16
+Add Duration to Rails Model
+Added AFIncrementalStore
+Added Dates to Model
+Sort Newest to Oldest
+
+-Fix Pace caludation
+-ADd Modified Date
+-Add Distance to MainViewController Cell
 -Add Pull to Refresh
 -Add Pusher
 -Add User Login
+-Add Create Run
 -Add Delete from iPhone
 -Add Edit Run on iPhone
--ADd Core Data rack-core-data
 -Add Calendar View
-Add Duration to Rails Model
+
+
+NICE
 -Coaches
 -Plans
     -Couch to 5k
@@ -13,4 +27,5 @@ Add Duration to Rails Model
 -Friends
 -Map Trail on IOS with click
 -Google Map on Web
--sort newests to oldest
+
+-Fix Duration Parsing

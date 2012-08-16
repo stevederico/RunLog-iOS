@@ -15,6 +15,11 @@
 @implementation DetailViewController
 
 #pragma mark - Managing the detail item
+@synthesize distanceLabel;
+@synthesize durationLabel;
+@synthesize paceLabel;
+@synthesize descriptionTextView;
+@synthesize dateLabel;
 
 - (void)setDetailItem:(id)newDetailItem
 {
@@ -29,9 +34,19 @@
 - (void)configureView
 {
     // Update the user interface for the detail item.
-
+  self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    
     if (self.detailItem) {
-        self.detailDescriptionLabel.text = [[self.detailItem valueForKey:@"distance"] description];
+        self.descriptionTextView.text = [[self.detailItem valueForKey:@"summary"] description];
+        self.distanceLabel.text = [[self.detailItem valueForKey:@"distance"] description];
+        self.durationLabel.text = [[self.detailItem valueForKey:@"duration"] description];
+        
+        double duration = [self.durationLabel.text doubleValue];
+        double distance = [self.distanceLabel.text doubleValue];
+        double pace = duration / distance;
+        self.paceLabel.text = [NSString stringWithFormat:@"%.2f",pace];
+        
+        self.dateLabel.text = [[self.detailItem valueForKey:@"created_at"] description];
     }
 }
 
@@ -40,12 +55,21 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     [self configureView];
+    
 }
 
 - (void)viewDidUnload
 {
+    [self setPaceLabel:nil];
+    [self setDurationLabel:nil];
+    [self setDistanceLabel:nil];
+    [self setDescriptionTextView:nil];
+    [self setDateLabel:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
+    
+  
+    
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
