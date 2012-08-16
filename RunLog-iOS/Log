@@ -8,8 +8,9 @@ Added Dates to Model
 Sort Newest to Oldest
 Fixed Running Pace Calculator
 Added Distance to MainViewController Cell
+Fixed Duration Parsing
 
--Remove Hardcoding for 12.0
+
 -ADd Modified Date
 -Add Pull to Refresh
 -Add Pusher

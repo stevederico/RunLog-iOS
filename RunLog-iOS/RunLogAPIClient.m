@@ -43,9 +43,15 @@ static NSString * const kAFIncrementalStoreExampleAPIBaseURLString = @"http://ru
     if ([entity.name isEqualToString:@"Run"]) {
         NSNumber *distance = [NSNumber numberWithDouble:[[representation valueForKey:@"distance"] doubleValue]];
         [mutablePropertyValues setValue:distance forKey:@"distance"];
-//        [NSNull null]
-//        NSNumber *duration = ((NSNull *)[NSNumber numberWithDouble:[[representation valueForKey:@"duration"] doubleValue]] != [NSNull null]) ? [NSNumber numberWithDouble:[[representation valueForKey:@"duration"] doubleValue]]: nil;
-        [mutablePropertyValues setValue:[NSNumber numberWithDouble:12.0] forKey:@"duration"];
+
+        if ([[representation valueForKey:@"duration"] isKindOfClass:[NSNull class]]) {
+        
+        }else{
+               NSNumber *duration = [NSNumber numberWithDouble:[[representation valueForKey:@"duration"] doubleValue]];
+                    [mutablePropertyValues setValue:duration forKey:@"duration"];
+        }
+  
+
         
         NSString *summary = [representation valueForKey:@"description"];
         [mutablePropertyValues setValue:summary forKey:@"summary"];
