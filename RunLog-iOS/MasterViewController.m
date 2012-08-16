@@ -246,7 +246,13 @@
 {
     NSManagedObject *object = [self.fetchedResultsController objectAtIndexPath:indexPath];
     cell.textLabel.text = [[object valueForKey:@"summary"] description];
-    cell.detailTextLabel.text = [NSString stringWithFormat:@"%@m/%@",[object valueForKey:@"distance"],[object valueForKey:@"duration"] ];
+    
+    static NSDateFormatter *df;
+    df = [[NSDateFormatter alloc] init];
+    [df setDateStyle:NSDateFormatterShortStyle];
+    NSString *d = [df stringFromDate:[object valueForKey:@"created_at"]];
+    
+    cell.detailTextLabel.text = d;
 }
 
 @end
