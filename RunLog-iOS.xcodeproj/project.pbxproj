@@ -41,8 +41,9 @@
 		7B999DF415DB2024006ECEDD /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 7B999DA815DB2024006ECEDD /* LICENSE */; };
 		7B999DF515DB2024006ECEDD /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 7B999DA915DB2024006ECEDD /* README.md */; };
 		7B999E0415DB20F9006ECEDD /* RunLogAPIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B999E0315DB20F9006ECEDD /* RunLogAPIClient.m */; };
-		7B999E0B15DB3012006ECEDD /* Run.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B999E0A15DB3012006ECEDD /* Run.m */; };
 		7B999E1515DCCE6D006ECEDD /* RunLogIncrementalStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B999E1415DCCE6D006ECEDD /* RunLogIncrementalStore.m */; };
+		7B999E1A15DD7DE1006ECEDD /* Log in Resources */ = {isa = PBXBuildFile; fileRef = 7B999E1915DD7DE1006ECEDD /* Log */; };
+		7B999E2015DD9F1A006ECEDD /* Run.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B999E1F15DD9F1A006ECEDD /* Run.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -100,10 +101,11 @@
 		7B999DA915DB2024006ECEDD /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 		7B999E0215DB20F9006ECEDD /* RunLogAPIClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RunLogAPIClient.h; sourceTree = "<group>"; };
 		7B999E0315DB20F9006ECEDD /* RunLogAPIClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RunLogAPIClient.m; sourceTree = "<group>"; };
-		7B999E0915DB3012006ECEDD /* Run.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Run.h; sourceTree = "<group>"; };
-		7B999E0A15DB3012006ECEDD /* Run.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Run.m; sourceTree = "<group>"; };
 		7B999E1315DCCE6D006ECEDD /* RunLogIncrementalStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RunLogIncrementalStore.h; path = ../RunLogIncrementalStore.h; sourceTree = "<group>"; };
 		7B999E1415DCCE6D006ECEDD /* RunLogIncrementalStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RunLogIncrementalStore.m; path = ../RunLogIncrementalStore.m; sourceTree = "<group>"; };
+		7B999E1915DD7DE1006ECEDD /* Log */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Log; sourceTree = "<group>"; };
+		7B999E1E15DD9F1A006ECEDD /* Run.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Run.h; sourceTree = "<group>"; };
+		7B999E1F15DD9F1A006ECEDD /* Run.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Run.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,6 +155,7 @@
 		7B999D0B15DB1E80006ECEDD /* RunLog-iOS */ = {
 			isa = PBXGroup;
 			children = (
+				7B999E1915DD7DE1006ECEDD /* Log */,
 				7B999E1215DB31C6006ECEDD /* View */,
 				7B999E1115DB31B6006ECEDD /* Controller */,
 				7B999E1015DB31AC006ECEDD /* Model */,
@@ -251,9 +254,9 @@
 		7B999E1015DB31AC006ECEDD /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				7B999E1E15DD9F1A006ECEDD /* Run.h */,
+				7B999E1F15DD9F1A006ECEDD /* Run.m */,
 				7B999D1715DB1E80006ECEDD /* RunLog_iOS.xcdatamodeld */,
-				7B999E0915DB3012006ECEDD /* Run.h */,
-				7B999E0A15DB3012006ECEDD /* Run.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -344,6 +347,7 @@
 				7B999DDD15DB2024006ECEDD /* README.md in Resources */,
 				7B999DF415DB2024006ECEDD /* LICENSE in Resources */,
 				7B999DF515DB2024006ECEDD /* README.md in Resources */,
+				7B999E1A15DD7DE1006ECEDD /* Log in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -372,8 +376,8 @@
 				7B999DC615DB2024006ECEDD /* AFXMLRequestOperation.m in Sources */,
 				7B999DC715DB2024006ECEDD /* UIImageView+AFNetworking.m in Sources */,
 				7B999E0415DB20F9006ECEDD /* RunLogAPIClient.m in Sources */,
-				7B999E0B15DB3012006ECEDD /* Run.m in Sources */,
 				7B999E1515DCCE6D006ECEDD /* RunLogIncrementalStore.m in Sources */,
+				7B999E2015DD9F1A006ECEDD /* Run.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
