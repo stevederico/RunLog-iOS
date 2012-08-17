@@ -44,6 +44,7 @@
 		7B999E1515DCCE6D006ECEDD /* RunLogIncrementalStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B999E1415DCCE6D006ECEDD /* RunLogIncrementalStore.m */; };
 		7B999E1A15DD7DE1006ECEDD /* Log in Resources */ = {isa = PBXBuildFile; fileRef = 7B999E1915DD7DE1006ECEDD /* Log */; };
 		7B999E2015DD9F1A006ECEDD /* Run.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B999E1F15DD9F1A006ECEDD /* Run.m */; };
+		7B999E2715DDBF6A006ECEDD /* NewRunViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7B999E2515DDBF6A006ECEDD /* NewRunViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -106,6 +107,9 @@
 		7B999E1915DD7DE1006ECEDD /* Log */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Log; sourceTree = "<group>"; };
 		7B999E1E15DD9F1A006ECEDD /* Run.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Run.h; sourceTree = "<group>"; };
 		7B999E1F15DD9F1A006ECEDD /* Run.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Run.m; sourceTree = "<group>"; };
+		7B999E2215DDBF69006ECEDD /* en */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = en; path = en.lproj/NewRunViewController.h; sourceTree = "<group>"; };
+		7B999E2415DDBF6A006ECEDD /* en */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = en; path = en.lproj/NewRunViewController.m; sourceTree = "<group>"; };
+		7B999E2615DDBF6A006ECEDD /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/NewRunViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -264,6 +268,8 @@
 		7B999E1115DB31B6006ECEDD /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				7B999E2115DDBF69006ECEDD /* NewRunViewController.h */,
+				7B999E2315DDBF69006ECEDD /* NewRunViewController.m */,
 				7B999E0F15DB3196006ECEDD /* AFIncrementalStore */,
 				7B999D1415DB1E80006ECEDD /* AppDelegate.h */,
 				7B999D1515DB1E80006ECEDD /* AppDelegate.m */,
@@ -280,6 +286,7 @@
 			children = (
 				7B999D2015DB1E80006ECEDD /* MasterViewController.xib */,
 				7B999D2315DB1E80006ECEDD /* DetailViewController.xib */,
+				7B999E2515DDBF6A006ECEDD /* NewRunViewController.xib */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -348,6 +355,7 @@
 				7B999DF415DB2024006ECEDD /* LICENSE in Resources */,
 				7B999DF515DB2024006ECEDD /* README.md in Resources */,
 				7B999E1A15DD7DE1006ECEDD /* Log in Resources */,
+				7B999E2715DDBF6A006ECEDD /* NewRunViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -406,6 +414,30 @@
 				7B999D2415DB1E80006ECEDD /* en */,
 			);
 			name = DetailViewController.xib;
+			sourceTree = "<group>";
+		};
+		7B999E2115DDBF69006ECEDD /* NewRunViewController.h */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7B999E2215DDBF69006ECEDD /* en */,
+			);
+			name = NewRunViewController.h;
+			sourceTree = "<group>";
+		};
+		7B999E2315DDBF69006ECEDD /* NewRunViewController.m */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7B999E2415DDBF6A006ECEDD /* en */,
+			);
+			name = NewRunViewController.m;
+			sourceTree = "<group>";
+		};
+		7B999E2515DDBF6A006ECEDD /* NewRunViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7B999E2615DDBF6A006ECEDD /* en */,
+			);
+			name = NewRunViewController.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

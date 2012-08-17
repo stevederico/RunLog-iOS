@@ -11,12 +11,18 @@ Added Distance to MainViewController Cell
 Fixed Duration Parsing
 Added Dates to MainView
 
+
+
+-Add New Run View
+-Set Units in Settings Panel
+
+
 -Display Minutes in TimeFormat
 -Show Date on Sidebar
 -ADd Modified Date
 -Add Pull to Refresh
 -Add Pusher
--Add New Run View
+
 -Add Edit Run View
     -Add Delete 
 -Add User Login
@@ -26,12 +32,15 @@ Added Dates to MainView
 
 
 NICE
+-Add Slide Out Drawer
+    =Settings Panel
+    =Account Profile
+    =Sign Out
+    =Calendar View
 -Coaches
 -Plans
     -Couch to 5k
     -Learn Triatholn
 -Friends
 -Map Trail on IOS with click
--Google Map on Web
-
--Fix Duration Parsing
+-Google Map in Model
