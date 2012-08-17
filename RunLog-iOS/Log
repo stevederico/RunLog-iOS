@@ -10,15 +10,15 @@ Fixed Running Pace Calculator
 Added Distance to MainViewController Cell
 Fixed Duration Parsing
 Added Dates to MainView
-
-
+Show Date on Sidebar
+Added Pull to Refresh
 
 -Add New Run View
 -Set Units in Settings Panel
 
 
 -Display Minutes in TimeFormat
--Show Date on Sidebar
+
 -ADd Modified Date
 -Add Pull to Refresh
 -Add Pusher

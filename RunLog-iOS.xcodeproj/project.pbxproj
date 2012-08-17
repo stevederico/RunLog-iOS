@@ -45,6 +45,12 @@
 		7B999E1A15DD7DE1006ECEDD /* Log in Resources */ = {isa = PBXBuildFile; fileRef = 7B999E1915DD7DE1006ECEDD /* Log */; };
 		7B999E2015DD9F1A006ECEDD /* Run.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B999E1F15DD9F1A006ECEDD /* Run.m */; };
 		7B999E2715DDBF6A006ECEDD /* NewRunViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7B999E2515DDBF6A006ECEDD /* NewRunViewController.xib */; };
+		7B999E3315DE077D006ECEDD /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 7B999E2915DE077D006ECEDD /* LICENSE */; };
+		7B999E3415DE077D006ECEDD /* Readme.markdown in Resources */ = {isa = PBXBuildFile; fileRef = 7B999E2A15DE077D006ECEDD /* Readme.markdown */; };
+		7B999E3515DE077D006ECEDD /* SSPullToRefresh.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 7B999E2C15DE077D006ECEDD /* SSPullToRefresh.podspec */; };
+		7B999E3615DE077D006ECEDD /* SSPullToRefreshDefaultContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B999E2E15DE077D006ECEDD /* SSPullToRefreshDefaultContentView.m */; };
+		7B999E3715DE077D006ECEDD /* SSPullToRefreshSimpleContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B999E3015DE077D006ECEDD /* SSPullToRefreshSimpleContentView.m */; };
+		7B999E3815DE077D006ECEDD /* SSPullToRefreshView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B999E3215DE077D006ECEDD /* SSPullToRefreshView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -110,6 +116,16 @@
 		7B999E2215DDBF69006ECEDD /* en */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = en; path = en.lproj/NewRunViewController.h; sourceTree = "<group>"; };
 		7B999E2415DDBF6A006ECEDD /* en */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = en; path = en.lproj/NewRunViewController.m; sourceTree = "<group>"; };
 		7B999E2615DDBF6A006ECEDD /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/NewRunViewController.xib; sourceTree = "<group>"; };
+		7B999E2915DE077D006ECEDD /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		7B999E2A15DE077D006ECEDD /* Readme.markdown */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Readme.markdown; sourceTree = "<group>"; };
+		7B999E2B15DE077D006ECEDD /* SSPullToRefresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSPullToRefresh.h; sourceTree = "<group>"; };
+		7B999E2C15DE077D006ECEDD /* SSPullToRefresh.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SSPullToRefresh.podspec; sourceTree = "<group>"; };
+		7B999E2D15DE077D006ECEDD /* SSPullToRefreshDefaultContentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSPullToRefreshDefaultContentView.h; sourceTree = "<group>"; };
+		7B999E2E15DE077D006ECEDD /* SSPullToRefreshDefaultContentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSPullToRefreshDefaultContentView.m; sourceTree = "<group>"; };
+		7B999E2F15DE077D006ECEDD /* SSPullToRefreshSimpleContentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSPullToRefreshSimpleContentView.h; sourceTree = "<group>"; };
+		7B999E3015DE077D006ECEDD /* SSPullToRefreshSimpleContentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSPullToRefreshSimpleContentView.m; sourceTree = "<group>"; };
+		7B999E3115DE077D006ECEDD /* SSPullToRefreshView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSPullToRefreshView.h; sourceTree = "<group>"; };
+		7B999E3215DE077D006ECEDD /* SSPullToRefreshView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSPullToRefreshView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,6 +163,7 @@
 		7B999D0215DB1E80006ECEDD /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				7B999E2815DE077D006ECEDD /* sspulltorefresh */,
 				7B999D2B15DB2024006ECEDD /* AFIncrementalStore */,
 				7B999D0315DB1E80006ECEDD /* UIKit.framework */,
 				7B999D0515DB1E80006ECEDD /* Foundation.framework */,
@@ -291,6 +308,23 @@
 			name = View;
 			sourceTree = "<group>";
 		};
+		7B999E2815DE077D006ECEDD /* sspulltorefresh */ = {
+			isa = PBXGroup;
+			children = (
+				7B999E2915DE077D006ECEDD /* LICENSE */,
+				7B999E2A15DE077D006ECEDD /* Readme.markdown */,
+				7B999E2B15DE077D006ECEDD /* SSPullToRefresh.h */,
+				7B999E2C15DE077D006ECEDD /* SSPullToRefresh.podspec */,
+				7B999E2D15DE077D006ECEDD /* SSPullToRefreshDefaultContentView.h */,
+				7B999E2E15DE077D006ECEDD /* SSPullToRefreshDefaultContentView.m */,
+				7B999E2F15DE077D006ECEDD /* SSPullToRefreshSimpleContentView.h */,
+				7B999E3015DE077D006ECEDD /* SSPullToRefreshSimpleContentView.m */,
+				7B999E3115DE077D006ECEDD /* SSPullToRefreshView.h */,
+				7B999E3215DE077D006ECEDD /* SSPullToRefreshView.m */,
+			);
+			path = sspulltorefresh;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -356,6 +390,9 @@
 				7B999DF515DB2024006ECEDD /* README.md in Resources */,
 				7B999E1A15DD7DE1006ECEDD /* Log in Resources */,
 				7B999E2715DDBF6A006ECEDD /* NewRunViewController.xib in Resources */,
+				7B999E3315DE077D006ECEDD /* LICENSE in Resources */,
+				7B999E3415DE077D006ECEDD /* Readme.markdown in Resources */,
+				7B999E3515DE077D006ECEDD /* SSPullToRefresh.podspec in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -386,6 +423,9 @@
 				7B999E0415DB20F9006ECEDD /* RunLogAPIClient.m in Sources */,
 				7B999E1515DCCE6D006ECEDD /* RunLogIncrementalStore.m in Sources */,
 				7B999E2015DD9F1A006ECEDD /* Run.m in Sources */,
+				7B999E3615DE077D006ECEDD /* SSPullToRefreshDefaultContentView.m in Sources */,
+				7B999E3715DE077D006ECEDD /* SSPullToRefreshSimpleContentView.m in Sources */,
+				7B999E3815DE077D006ECEDD /* SSPullToRefreshView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

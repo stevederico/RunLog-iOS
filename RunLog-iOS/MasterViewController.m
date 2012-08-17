@@ -38,19 +38,28 @@
     _fetchedResultsController.delegate = self;
     [_fetchedResultsController performFetch:nil];
     
-        self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemRefresh target:_fetchedResultsController action:@selector(performFetch:)];
-	// Do any additional setup after loading the view, typically from a nib.
-//    self.navigationItem.leftBarButtonItem = self.editButtonItem;
 
     UIBarButtonItem *addButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(insertNewObject:)];
     self.navigationItem.rightBarButtonItem = addButton;
+    
+     self.pullToRefreshView = [[SSPullToRefreshView alloc] initWithScrollView:self.tableView delegate:self];
+    
 }
 
-//- (void)viewDidUnload
-//{
-//    [super viewDidUnload];
-//    // Release any retained subviews of the main view.
-//}
+- (void)viewDidUnload
+{
+    [super viewDidUnload];
+    self.pullToRefreshView = nil;
+    // Release any retained subviews of the main view.
+}
+
+
+- (BOOL)isLoading{
+
+
+    return YES;
+}
+
 //
 //- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 //{
@@ -253,6 +262,20 @@
     NSString *d = [df stringFromDate:[object valueForKey:@"created_at"]];
     
     cell.detailTextLabel.text = d;
+}
+
+#pragma mark - PullToRefresh
+
+- (void)refresh {
+
+    [self.pullToRefreshView startLoading];
+    [_fetchedResultsController performFetch:nil];
+    [self.pullToRefreshView finishLoading];
+
+}
+
+- (void)pullToRefreshViewDidStartLoading:(SSPullToRefreshView *)view{
+    [self refresh];
 }
 
 @end
