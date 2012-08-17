@@ -65,13 +65,26 @@
 
 - (IBAction)saveRun:(id)sender {
     NSManagedObjectContext *context = [(id)[[UIApplication sharedApplication] delegate] managedObjectContext];
-    Run *myRun = [NSEntityDescription insertNewObjectForEntityForName:@"Run"
-                                    inManagedObjectContext:context];
+    NSEntityDescription *d = [NSEntityDescription entityForName:@"Run" inManagedObjectContext:context];
+    Run *myRun = [[Run alloc]
+                                    initWithEntity:d
+                                    insertIntoManagedObjectContext:context];
+    
     myRun.distance = [NSNumber numberWithDouble:[self.distanceTextField.text doubleValue]];
-    [context save:nil];
+    myRun.duration = [NSNumber numberWithDouble:[self.durationTextField.text doubleValue]];
+    myRun.summary = self.NotesTextView.text;
+    myRun.created_at = [NSDate date];
+    NSError *error = nil;
+    BOOL success = [context save:&error];
+    if (!success) {
+        NSLog(@"Error %@", [error description]);
+        return;
+    }else{
+         [self close];
+    }
     
     
-    [self close];
+   
      
 }
 @end

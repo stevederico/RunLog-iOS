@@ -65,8 +65,9 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-
-    return [[[self.fetchedResultsController sections] objectAtIndex:section] numberOfObjects];
+    NSInteger rows = [[[self.fetchedResultsController sections] objectAtIndex:section] numberOfObjects];
+    NSLog(@"ROWS %d",rows);
+    return rows;
 }
 
 // Customize the appearance of table view cells.
@@ -86,6 +87,11 @@
 
 - (void)configureCell:(UITableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath
 {
+    
+//    if (indexPath.row >=[[[self.fetchedResultsController sections] objectAtIndex:0] numberOfObjects]) {
+//        return;
+//    }
+    
     NSManagedObject *object = [self.fetchedResultsController objectAtIndexPath:indexPath];
     cell.textLabel.text = [[object valueForKey:@"summary"] description];
     
