@@ -31,10 +31,15 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    self.title = @"Add Run";
+    
     UIBarButtonItem *closeButton = [[UIBarButtonItem alloc] initWithTitle:@"Close" style:UIBarButtonItemStylePlain target:self action:@selector(close)];
     self.navigationItem.leftBarButtonItem = closeButton;
     UIBarButtonItem *saveButton = [[UIBarButtonItem alloc] initWithTitle:@"Save" style:UIBarButtonItemStyleDone target:self action:@selector(saveRun:)];
     self.navigationItem.rightBarButtonItem = saveButton;
+    
+    
+    
     [self.distanceTextField becomeFirstResponder];
     [self.scrollView setContentSize:CGSizeMake(320, 500)];
     [self.distanceTextField setKeyboardType:UIKeyboardTypeDecimalPad];
