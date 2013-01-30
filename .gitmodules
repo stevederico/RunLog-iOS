@@ -1,0 +1,6 @@
+[submodule "Vendor/AFIncrementalStore"]
+	path = Vendor/AFIncrementalStore
+	url = https://github.com/AFNetworking/AFIncrementalStore.git
+[submodule "sspulltorefresh"]
+	path = sspulltorefresh
+	url = https://github.com/soffes/sspulltorefresh.git
